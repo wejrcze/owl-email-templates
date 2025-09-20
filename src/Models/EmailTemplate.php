@@ -190,6 +190,7 @@ class EmailTemplate extends Model
             'title' => TokenHelper::replace($this->title ?? '', $models),
             'theme' => $this->theme->colours,
             'logo' => $this->logo,
+            'web_url' => $this->web_url,
         ];
     }
 

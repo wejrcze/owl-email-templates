@@ -36,6 +36,7 @@ trait BuildGenericEmail
                 'title'         => TokenHelper::replace($this->emailTemplate->title, $this),
                 'theme'         => $this->emailTemplate->theme->colours,
                 'logo'          => $this->emailTemplate->logo,
+                'web_url'          => $this->emailTemplate->web_url,
         ];
 
         return $this->from($this->emailTemplate->from['email'], $this->emailTemplate->from['name'])
